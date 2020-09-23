@@ -22,12 +22,6 @@
   outline: none;
 }
 
-.profile__edit-btn:active {
-  border: 1px solid #fff;
-  border-radius: 0;
-  box-sizing: border-box;
-}
-
 .profile__edit-btn:hover {
   cursor: pointer;
   opacity: 0.6;

@@ -1,0 +1,7 @@
+.element {
+  max-width: 282px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
