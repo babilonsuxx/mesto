@@ -1,0 +1,15 @@
+@import '../vendor/normalize.css';
+@import '../vendor/fonts/fonts.css';
+
+@import '../blocks/page/page.css';
+
+@import '../blocks/header/header.css';
+@import '../blocks/header/__logo/header__logo.css';
+
+@import '../blocks/profile/profile.css';
+@import '../blocks/profile/__avatar/profile__avatar.css';
+@import '../blocks/profile/__info/profile__info.css';
+@import '../blocks/profile/__name/profile__name.css';
+@import '../blocks/profile/__description/profile__description.css';
+@import '../blocks/profile/__edit-btn/profile__edit-btn.css';
+@import '../blocks/profile/__add-btn/profile__add-btn.css';
