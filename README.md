@@ -17,6 +17,6 @@
 
 **Готовый сайт:**
 
-[посмотреть результат](https://babilonsuxx.github.io/mesto/)
+[посмотреть результат](https://babilonsuxx.github.io/mesto/index.html)
 
 
