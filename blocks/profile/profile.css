@@ -1,16 +1,26 @@
 .profile {
-  min-height: 210px;
-  display: flex;
-  flex-direction: row;
-  position: relative;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 120px min-content minmax(150px, auto);
+  justify-items: end;
+  align-items: center;
   color: #fff;
+  padding: 41px 0 50px 0;
 }
 
 
+@media screen and (max-width: 956px) {
+  .profile {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+}
+
 @media screen and (max-width: 820px) {
   .profile {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 364px;
+    padding-bottom: 36px;
   }
 }

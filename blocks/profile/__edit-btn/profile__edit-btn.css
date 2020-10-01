@@ -1,16 +1,11 @@
 .profile__edit-btn {
-
-  position: absolute;
-  top: 77px;
-  right: 0;
-
   background-color: #000;
   box-sizing: border-box;
   border: 1px solid #fff;
   height: 24px;
   width: 24px;
   border-radius: 0;
-
+  margin-bottom: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,8 +25,9 @@
 
 @media screen and (max-width: 820px) {
   .profile__edit-btn {
-    top:36px;
     height: 18px;
     width: 18px;
+    margin-bottom: 4px;
+    margin-left: 3px;
   }
 }
