@@ -29,3 +29,17 @@
 }
 
 
+@media screen and (max-width: 956px) {
+  .profile__add-btn {
+    right: 19px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .profile__add-btn {
+    position: static;
+    margin-top: 33px;
+    width: 282px;
+  }
+}
+

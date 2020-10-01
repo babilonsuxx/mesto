@@ -9,15 +9,17 @@
 </head>
 <body>
   <div class="page">
+
     <header class="header">
       <img class="header__logo" src="./images/logo.png" alt="Текстовый логотип Mesto Russia.">
     </header>
+
     <main>
-      <section class="profile">
+      <section class="profile container">
         <img class="profile__avatar" src="./images/avatar.png" alt="Жак-Ив Кусто в красной шапке улыбается на фоне моря.">
         <div class="profile__info">
           <h1 class="profile__name">Жак-Ив Кусто</h1>
-          <p class="profile__description">Исследователь океана</p>
+          <p class="profile__job">Исследователь океана</p>
           <button class="profile__edit-btn">
             <img src="./images/edit.png" alt="Редактировать.">
           </button>
@@ -26,7 +28,8 @@
           <img src="./images/add.png" alt="Добавить.">
         </button>
       </section>
-      <section class="elements">
+
+      <section class="elements container">
         <div class="element">
           <img class="element__img" src="./images/moscow.jpg" alt="Москва.">
           <div class="element__description">
@@ -78,9 +81,23 @@
       </section>
 
     </main>
-    <footer class="footer">
+
+    <footer class="footer container">
       <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
     </footer>
+
+    <div class="popup">
+      <div class="popup__container">
+        <img class="popup__btn-close" src="./images/close.png">
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <form class="popup__form">
+          <input type="text" class="popup__filed-name">
+          <input type="text" class="popup__field-job">
+          <button class="popup__btn-save">Сохранить</button>
+        </form>
+      </div>
+    </div>
   </div>
+  <script src="scripts/scripts.js"></script>
 </body>
 </html>

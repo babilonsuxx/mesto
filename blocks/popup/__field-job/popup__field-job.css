@@ -1,0 +1,11 @@
+.popup__field-job {
+  margin-top: 30px;
+  border: 0px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #0003;
+  width: 100%;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 0;
+  padding-bottom: 9px;
+}

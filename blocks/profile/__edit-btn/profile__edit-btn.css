@@ -26,3 +26,12 @@
   cursor: pointer;
   opacity: 0.6;
 }
+
+
+@media screen and (max-width: 820px) {
+  .profile__edit-btn {
+    top:36px;
+    height: 18px;
+    width: 18px;
+  }
+}
