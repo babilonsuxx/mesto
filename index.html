@@ -19,12 +19,12 @@
         <img class="profile__avatar" src="./images/avatar.png" alt="Жак-Ив Кусто в красной шапке улыбается на фоне моря.">
         <div class="profile__info">
           <h1 class="profile__name">Жак-Ив Кусто</h1>
-          <button class="profile__edit-btn">
+          <button class="profile__edit-btn" type="button">
             <img src="./images/edit.svg" alt="Редактировать.">
           </button>
           <p class="profile__job">Исследователь океана</p>
         </div>
-        <button class="profile__add-btn">
+        <button class="profile__add-btn" type="button">
           <img src="./images/add.svg" alt="Добавить.">
         </button>
       </section>
@@ -88,12 +88,12 @@
 
     <div class="popup">
       <div class="popup__container">
-        <img class="popup__btn-close" src="./images/closeIcon.svg" alt="закрыть">
+        <button type="button" class="popup__btn-close"></button>
         <h3 class="popup__title">Редактировать профиль</h3>
-        <form class="popup__form">
-          <input type="text" class="popup__filed-name">
-          <input type="text" class="popup__field-job">
-          <button class="popup__btn-save">Сохранить</button>
+        <form class="popup__form" method="post" action="">
+          <input type="text" class="popup__field popup__filed_name">
+          <input type="text" class="popup__field popup__field_job">
+          <button class="popup__btn-save" type="submit">Сохранить</button>
         </form>
       </div>
     </div>

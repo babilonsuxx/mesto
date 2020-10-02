@@ -30,8 +30,9 @@
 @import '../blocks/popup/_is-open/popup_is-open.css';
 @import '../blocks/popup/__btn-close/popup__btn-close.css';
 @import '../blocks/popup/__container/popup__container.css';
-@import '../blocks/popup/__field-job/popup__field-job.css';
-@import '../blocks/popup/__filed-name/popup__filed-name.css';
+@import '../blocks/popup/__field/popup__field.css';
+@import '../blocks/popup/__field-job/popup__field_job.css';
+@import '../blocks/popup/__filed-name/popup__filed_name.css';
 @import '../blocks/popup/__form/popup__form.css';
 @import '../blocks/popup/__title/popup__title.css';
 @import '../blocks/popup/__btn-save/popup__btn-save.css';

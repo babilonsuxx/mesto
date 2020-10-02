@@ -6,23 +6,24 @@ let popupFormEdit=document.querySelector('.popup__form');
 
 let name=document.querySelector('.profile__name');
 let job=document.querySelector('.profile__job');
-let nameInput=document.querySelector('.popup__filed-name');
-let jobInput=document.querySelector('.popup__field-job');
+let nameInput=document.querySelector('.popup__filed_name');
+let jobInput=document.querySelector('.popup__field_job');
 
-let popupToggle=() => {
-  popup.classList.toggle('popup_is-open');
-}
+
 
 let onClickEditBtn=()=> {
   nameInput.value=name.innerText;
   jobInput.value=job.innerText;
-  popupToggle();
+  popup.classList.add('popup_is-open');
 }
 
+let onClickCloseBtn=()=> {
+  popup.classList.remove('popup_is-open');
+}
 
 let onClickPopupBackground=(event)=> {
   if(event.target===event.currentTarget) {
-    popupToggle();
+    popup.classList.remove('popup_is-open');
   }
 }
 
@@ -30,12 +31,12 @@ let popupFormSubmit=(event)=> {
   event.preventDefault();
   name.innerText=nameInput.value;
   job.innerText=jobInput.value;
-  popupToggle();
+  popup.classList.remove('popup_is-open');
 }
 
 
 editBtn.addEventListener('click', onClickEditBtn);
-popupCloseBtn.addEventListener('click', popupToggle);
+popupCloseBtn.addEventListener('click', onClickCloseBtn);
 popupFormEdit.addEventListener('submit', popupFormSubmit);
 popup.addEventListener('click', onClickPopupBackground);
 
