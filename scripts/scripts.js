@@ -19,9 +19,6 @@ let onClickEditBtn=()=> {
   popupToggle();
 }
 
-let onClickPopupCloseBtn=()=> {
-  popupToggle();
-}
 
 let onClickPopupBackground=(event)=> {
   if(event.target===event.currentTarget) {
@@ -38,7 +35,7 @@ let popupFormSubmit=(event)=> {
 
 
 editBtn.addEventListener('click', onClickEditBtn);
-popupCloseBtn.addEventListener('click', onClickPopupCloseBtn);
+popupCloseBtn.addEventListener('click', popupToggle);
 popupFormEdit.addEventListener('submit', popupFormSubmit);
 popup.addEventListener('click', onClickPopupBackground);
 
