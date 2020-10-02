@@ -19,7 +19,7 @@ let onClickEditBtn=()=> {
   popupToggle();
 }
 
-let onClickPopubCloseBtn=()=> {
+let onClickPopupCloseBtn=()=> {
   popupToggle();
 }
 
@@ -38,7 +38,7 @@ let popupFormSubmit=(event)=> {
 
 
 editBtn.addEventListener('click', onClickEditBtn);
-popupCloseBtn.addEventListener('click', onClickPopubCloseBtn);
+popupCloseBtn.addEventListener('click', onClickPopupCloseBtn);
 popupFormEdit.addEventListener('submit', popupFormSubmit);
 popup.addEventListener('click', onClickPopupBackground);
 
