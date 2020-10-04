@@ -31,7 +31,7 @@ let popupFormSubmit=(event)=> {
   event.preventDefault();
   name.innerText=nameInput.value;
   job.innerText=jobInput.value;
-  popup.classList.remove('popup_is-open');
+  onClickCloseBtn();
 }
 
 
