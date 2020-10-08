@@ -1,9 +1,9 @@
-.popup__filed_name {
+.popup-edit__filed_name {
   margin-top: 47px;
 }
 
 @media screen and (max-width: 820px) {
-  .popup__filed_name {
+  .popup-edit__filed_name {
     margin-top: 74px;
   }
 }

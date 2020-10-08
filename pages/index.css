@@ -26,13 +26,13 @@
 @import '../blocks/footer/footer.css';
 @import '../blocks/footer/__copyright/footer__copyright.css';
 
-@import '../blocks/popup/popup.css';
-@import '../blocks/popup/_is-open/popup_is-open.css';
-@import '../blocks/popup/__btn-close/popup__btn-close.css';
-@import '../blocks/popup/__container/popup__container.css';
-@import '../blocks/popup/__field/popup__field.css';
-@import '../blocks/popup/__field-job/popup__field_job.css';
-@import '../blocks/popup/__filed-name/popup__filed_name.css';
-@import '../blocks/popup/__form/popup__form.css';
-@import '../blocks/popup/__title/popup__title.css';
-@import '../blocks/popup/__btn-save/popup__btn-save.css';
+@import '../blocks/popup-eidit/popup-edit.css';
+@import '../blocks/popup-eidit/_is-open/popup-edit_is-open.css';
+@import '../blocks/popup-eidit/__btn-close/popup-edit__btn-close.css';
+@import '../blocks/popup-eidit/__container/popup-edit__container.css';
+@import '../blocks/popup-eidit/__field/popup-edit__field.css';
+@import '../blocks/popup-eidit/__field-job/popup-edit__field_job.css';
+@import '../blocks/popup-eidit/__filed-name/popup-edit__filed_name.css';
+@import '../blocks/popup-eidit/__form/popup-edit__form.css';
+@import '../blocks/popup-eidit/__title/popup-edit__title.css';
+@import '../blocks/popup-eidit/__btn-save/popup-edit__btn-save.css';
