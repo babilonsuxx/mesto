@@ -25,24 +25,29 @@ const initialCards =[
   }
 ];
 const elements=document.querySelector('.elements');
-
 const templateElement=document.querySelector('.template__element');
 
 const editBtn=document.querySelector('.profile__edit-btn');
 const popupEdit=document.querySelector('.popup-edit');
 const popupEditCloseBtn=document.querySelector('.popup-edit__btn-close');
 const popupEditForm=document.querySelector('.popup-edit__form')
+const name=document.querySelector('.profile__name');
+const job=document.querySelector('.profile__job');
+const nameInput=document.querySelector('.popup-edit__filed_name');
+const jobInput=document.querySelector('.popup-edit__field_job');
 
 const addBtn=document.querySelector('.profile__add-btn');
 const popupAdd=document.querySelector('.popup-add');
 const popupAddCloseBtn=document.querySelector('.popup-add__btn-close');
 const popupAddForm=document.querySelector('.popup-add__form');
 
+const popupPicture=document.querySelector('.popup-picture');
+const popupPictureCloseBtn=document.querySelector('.popup-picture__btn-close');
+const popupPictureImg=document.querySelector('.popup-picture__img');
+const popupPictureDescription=document.querySelector('.popup-picture__description');
 
-const name=document.querySelector('.profile__name');
-const job=document.querySelector('.profile__job');
-const nameInput=document.querySelector('.popup-edit__filed_name');
-const jobInput=document.querySelector('.popup-edit__field_job');
+
+
 
 // рисуем 6 из массива
 const renderElements=()=>{
@@ -63,6 +68,12 @@ const getElement=(data)=>{
 
   element.querySelector('.element__delete-btn').addEventListener('click',(event)=>{
     event.target.closest('.element').remove();
+  })
+
+  element.querySelector('.element__img').addEventListener('click', (event)=>{
+    popupPictureImg.setAttribute('src',event.target.getAttribute('src'))
+    popupPictureDescription.innerHTML=event.target.getAttribute('alt');
+    openPopup(popupPicture);
   })
   return element;
 }
@@ -113,7 +124,7 @@ const popupAddSubmit=(event)=>{
 }
 
 
-//слушатели
+//----------СЛУШАТЕЛИ
 
 //редактируем
 editBtn.addEventListener('click', onClickEditBtn);
@@ -127,6 +138,9 @@ popupAddCloseBtn.addEventListener('click', closePopup.bind(this, popupAdd));
 popupAddForm.addEventListener('submit', popupAddSubmit);
 popupAdd.addEventListener('click', onClickPopupBackground);
 
+//показываем полное изображение
+popupPicture.addEventListener('click', onClickPopupBackground);
+popupPictureCloseBtn.addEventListener('click', closePopup.bind(this, popupPicture));
 
 renderElements();
 

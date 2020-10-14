@@ -48,3 +48,8 @@
 @import '../blocks/popup-add/__form/popup-add__form.css';
 @import '../blocks/popup-add/__title/popup-add__title.css';
 @import '../blocks/popup-add/__btn-save/popup-add__btn-create.css';
+
+@import '../blocks/popup-picture/__container/popup-picture__container.css';
+@import '../blocks/popup-picture/__btn-close/popup-picture__btn-close.css';
+@import '../blocks/popup-picture/__img/popup-picture__img.css';
+@import '../blocks/popup-picture/__description/popup-picture__description.css';
