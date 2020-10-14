@@ -1,0 +1,17 @@
+.popup-add__btn-create {
+  margin-top: 49px;
+  width: 100%;
+  border: 0;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  min-height: 50px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 820px) {
+  .popup-add__btn-create  {
+    margin-top: 44px;
+  }
+}

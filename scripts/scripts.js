@@ -28,24 +28,30 @@ const elements=document.querySelector('.elements');
 
 const templateElement=document.querySelector('.template__element');
 
-let editBtn=document.querySelector('.profile__edit-btn');
-let popup=document.querySelector('.popup-edit');
-let popupCloseBtn=document.querySelector('.popup-edit__btn-close');
-let popupFormEdit=document.querySelector('.popup-edit__form');
+const editBtn=document.querySelector('.profile__edit-btn');
+const popupEdit=document.querySelector('.popup-edit');
+const popupEditCloseBtn=document.querySelector('.popup-edit__btn-close');
+const popupEditForm=document.querySelector('.popup-edit__form')
 
-let name=document.querySelector('.profile__name');
-let job=document.querySelector('.profile__job');
-let nameInput=document.querySelector('.popup-edit__filed_name');
-let jobInput=document.querySelector('.popup-edit__field_job');
+const addBtn=document.querySelector('.profile__add-btn');
+const popupAdd=document.querySelector('.popup-add');
+const popupAddCloseBtn=document.querySelector('.popup-add__btn-close');
+const popupAddForm=document.querySelector('.popup-add__form');
+
+
+const name=document.querySelector('.profile__name');
+const job=document.querySelector('.profile__job');
+const nameInput=document.querySelector('.popup-edit__filed_name');
+const jobInput=document.querySelector('.popup-edit__field_job');
 
 // рисуем 6 из массива
 const renderElements=()=>{
-  const items=initialCards.map(element=>getElements(element));
+  const items=initialCards.map(element=>getElement(element));
   elements.append(...items);
 }
 
 // генерим 1 для того, чтобы его поставить куда нить.
-const getElements=(data)=>{
+const getElement=(data)=>{
   const element=templateElement.content.cloneNode(true);
   element.querySelector('.element__img').setAttribute('alt', data.name);
   element.querySelector('.element__img').setAttribute('src', data.link);
@@ -54,38 +60,63 @@ const getElements=(data)=>{
 }
 
 
-
-
-
-
-let onClickEditBtn=()=> {
-  nameInput.value=name.innerText;
-  jobInput.value=job.innerText;
-  popup.classList.add('popup-edit_is-open');
+//открываем и закрываем любой попап
+const openPopup=(popup)=> {
+  popup.classList.add('popup_is-open');
 }
 
-let onClickCloseBtn=()=> {
-  popup.classList.remove('popup-edit_is-open');
+const closePopup=(popup)=> {
+  popup.classList.remove('popup_is-open');
 }
 
-let onClickPopupBackground=(event)=> {
+const onClickPopupBackground=(event)=> {
   if(event.target===event.currentTarget) {
-    popup.classList.remove('popup-edit_is-open');
+    console.log(event.target);
+    event.target.classList.remove('popup_is-open');
   }
 }
 
-let popupFormSubmit=(event)=> {
+//редактируем
+const onClickEditBtn=()=> {
+  nameInput.value=name.innerText;
+  jobInput.value=job.innerText;
+  openPopup(popupEdit);
+}
+
+const popupFormSubmit=(event)=> {
   event.preventDefault();
   name.innerText=nameInput.value;
   job.innerText=jobInput.value;
-  onClickCloseBtn();
+  closePopup(popupEdit);
+}
+
+//добавляем
+const popupAddSubmit=(event)=>{
+  event.preventDefault();
+  const data={
+    name: document.querySelector('.popup-add__filed_name').value,
+    link: document.querySelector('.popup-add__field_link').value
+  }
+  console.log(data);
+  const item=getElement(data);
+  elements.prepend(item);
+  closePopup(popupAdd);
 }
 
 
+//слушатели
+
+//редактируем
 editBtn.addEventListener('click', onClickEditBtn);
-popupCloseBtn.addEventListener('click', onClickCloseBtn);
-popupFormEdit.addEventListener('submit', popupFormSubmit);
-popup.addEventListener('click', onClickPopupBackground);
+popupEditCloseBtn.addEventListener('click', closePopup.bind(this, popupEdit));
+popupEditForm.addEventListener('submit', popupFormSubmit);
+popupEdit.addEventListener('click', onClickPopupBackground);
+
+//добавляем
+addBtn.addEventListener('click', openPopup.bind(this, popupAdd));
+popupAddCloseBtn.addEventListener('click', closePopup.bind(this, popupAdd));
+popupAddForm.addEventListener('submit', popupAddSubmit);
+popupAdd.addEventListener('click', onClickPopupBackground);
 
 
 renderElements();
