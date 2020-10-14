@@ -97,7 +97,8 @@ const popupAddSubmit=(event)=>{
     name: document.querySelector('.popup-add__filed_name').value,
     link: document.querySelector('.popup-add__field_link').value
   }
-  console.log(data);
+  document.querySelector('.popup-add__filed_name').value='';
+  document.querySelector('.popup-add__field_link').value='';
   const item=getElement(data);
   elements.prepend(item);
   closePopup(popupAdd);
