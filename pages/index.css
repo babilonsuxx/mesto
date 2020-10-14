@@ -18,6 +18,7 @@
 @import '../blocks/elements/elements.css';
 
 @import '../blocks/element/element.css';
+@import '../blocks/element/__delete-btn/element__delete-btn.css';
 @import '../blocks/element/__img/element__img.css';
 @import '../blocks/element/__description/element__description.css';
 @import '../blocks/element/__title/element__title.css';

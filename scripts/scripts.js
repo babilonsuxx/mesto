@@ -55,9 +55,14 @@ const getElement=(data)=>{
   const element=templateElement.content.cloneNode(true);
   element.querySelector('.element__img').setAttribute('alt', data.name);
   element.querySelector('.element__img').setAttribute('src', data.link);
-  element.querySelector('.element__title').innerText=data.name;
+  element.querySelector('.element__title').innerText=data.name
+
   element.querySelector('.element__like-btn').addEventListener('click',(event)=>{
     event.target.classList.toggle('element__like-btn_liked');
+  })
+
+  element.querySelector('.element__delete-btn').addEventListener('click',(event)=>{
+    event.target.closest('.element').remove();
   })
   return element;
 }
