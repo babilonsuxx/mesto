@@ -56,6 +56,9 @@ const getElement=(data)=>{
   element.querySelector('.element__img').setAttribute('alt', data.name);
   element.querySelector('.element__img').setAttribute('src', data.link);
   element.querySelector('.element__title').innerText=data.name;
+  element.querySelector('.element__like-btn').addEventListener('click',(event)=>{
+    event.target.classList.toggle('element__like-btn_liked');
+  })
   return element;
 }
 

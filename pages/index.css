@@ -22,6 +22,7 @@
 @import '../blocks/element/__description/element__description.css';
 @import '../blocks/element/__title/element__title.css';
 @import '../blocks/element/__like-btn/element__like-btn.css';
+@import '../blocks/element/__like-btn/_liked/element__like-btn_liked.css';
 
 @import '../blocks/footer/footer.css';
 @import '../blocks/footer/__copyright/footer__copyright.css';
