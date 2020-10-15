@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0974747-bb41-4001-a3a6-09c201bccac3" name="Default Changelist" comment="refactor: первое критическое про селекторы и многократный поиск элемента (62)" />
+    <list default="true" id="d0974747-bb41-4001-a3a6-09c201bccac3" name="Default Changelist" comment="refactor: второе критическое про textContent (75)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/scripts.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +76,7 @@
       <workItem from="1602628094096" duration="8160000" />
       <workItem from="1602690171337" duration="1275000" />
       <workItem from="1602700580758" duration="9054000" />
-      <workItem from="1602799459720" duration="1564000" />
+      <workItem from="1602799459720" duration="2223000" />
     </task>
     <task id="LOCAL-00001" summary="fix: пофиксил опечатку в названии функции для кнопки зарытия попапа">
       <created>1601632425009</created>
@@ -180,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602801104043</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="refactor: второе критическое про textContent (75)">
+      <created>1602801248143</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1602801248143</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +225,8 @@
     <MESSAGE value="feat:  popup with visibility and opacity" />
     <MESSAGE value="refactor: поправил немного верстки для инпутов" />
     <MESSAGE value="refactor: первое критическое про селекторы и многократный поиск элемента (62)" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: первое критическое про селекторы и многократный поиск элемента (62)" />
+    <MESSAGE value="refactor: второе критическое про textContent (75)" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: второе критическое про textContent (75)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1780" y="-415" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601632524271">
@@ -240,6 +251,10 @@
     </state>
     <state x="553" y="305" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.-609.1920.1080@0.0.1366.728" timestamp="1602193293619" />
     <state x="2143" y="-156" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.-609.1920.1080@1366.-609.1920.1080" timestamp="1602630967338" />
+    <state x="2033" y="-470" width="585" height="801" key="find.popup" timestamp="1602801469470">
+      <screen x="1366" y="-609" width="1920" height="1080" />
+    </state>
+    <state x="2033" y="-470" width="585" height="801" key="find.popup/0.0.1366.728/1366.-609.1920.1080@1366.-609.1920.1080" timestamp="1602801469470" />
     <state x="1989" y="-374" width="672" height="678" key="search.everywhere.popup" timestamp="1602538681738">
       <screen x="1366" y="-609" width="1920" height="1080" />
     </state>

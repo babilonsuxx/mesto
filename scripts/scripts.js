@@ -24,6 +24,7 @@ const initialCards =[
     link: './images/tokio.jpg'
   }
 ];
+
 const elements=document.querySelector('.elements');
 const templateElement=document.querySelector('.template__element');
 
@@ -94,21 +95,20 @@ const closePopup=(popup)=> {
   popup.classList.remove('popup_is-open');
 }
 
-const onClickPopupBackground=(event)=> {
+const clickPopupBackground=(event)=> {
   if(event.target===event.currentTarget) {
-    console.log(event.target);
     event.target.classList.remove('popup_is-open');
   }
 }
 
 //редактируем
-const onClickEditBtn=()=> {
+const clickEditBtn=()=> {
   nameInput.value=name.innerText;
   jobInput.value=job.innerText;
   openPopup(popupEdit);
 }
 
-const popupFormSubmit=(event)=> {
+const submitPopupForm=(event)=> {
   event.preventDefault();
   name.innerText=nameInput.value;
   job.innerText=jobInput.value;
@@ -116,7 +116,7 @@ const popupFormSubmit=(event)=> {
 }
 
 //добавляем
-const popupAddSubmit=(event)=>{
+const submitAddForm=(event)=>{
   event.preventDefault();
   const data={
     name: document.querySelector('.popup-add__filed_name').value,
@@ -133,19 +133,19 @@ const popupAddSubmit=(event)=>{
 //----------СЛУШАТЕЛИ
 
 //редактируем
-editBtn.addEventListener('click', onClickEditBtn);
+editBtn.addEventListener('click', clickEditBtn);
 popupEditCloseBtn.addEventListener('click', closePopup.bind(this, popupEdit));
-popupEditForm.addEventListener('submit', popupFormSubmit);
-popupEdit.addEventListener('click', onClickPopupBackground);
+popupEditForm.addEventListener('submit', submitPopupForm);
+popupEdit.addEventListener('click', clickPopupBackground);
 
 //добавляем
 addBtn.addEventListener('click', openPopup.bind(this, popupAdd));
 popupAddCloseBtn.addEventListener('click', closePopup.bind(this, popupAdd));
-popupAddForm.addEventListener('submit', popupAddSubmit);
-popupAdd.addEventListener('click', onClickPopupBackground);
+popupAddForm.addEventListener('submit', submitAddForm);
+popupAdd.addEventListener('click', clickPopupBackground);
 
 //показываем полное изображение
-popupPicture.addEventListener('click', onClickPopupBackground);
+popupPicture.addEventListener('click', clickPopupBackground);
 popupPictureCloseBtn.addEventListener('click', closePopup.bind(this, popupPicture));
 
 renderElements();
