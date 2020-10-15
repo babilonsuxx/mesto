@@ -78,7 +78,7 @@ const getElement=(data)=>{
 
   img.addEventListener('click', (event)=>{
     popupPictureImg.setAttribute('src',event.target.getAttribute('src'))
-    popupPictureDescription.innerHTML=event.target.getAttribute('alt');
+    popupPictureDescription.textContent=event.target.getAttribute('alt');
     openPopup(popupPicture);
   })
   return element;

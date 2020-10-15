@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0974747-bb41-4001-a3a6-09c201bccac3" name="Default Changelist" comment="refactor: поправил немного верстки для инпутов">
-      <change beforePath="$PROJECT_DIR$/scripts/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/scripts.js" afterDir="false" />
-    </list>
+    <list default="true" id="d0974747-bb41-4001-a3a6-09c201bccac3" name="Default Changelist" comment="refactor: первое критическое про селекторы и многократный поиск элемента (62)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +73,7 @@
       <workItem from="1602628094096" duration="8160000" />
       <workItem from="1602690171337" duration="1275000" />
       <workItem from="1602700580758" duration="9054000" />
-      <workItem from="1602799459720" duration="1239000" />
+      <workItem from="1602799459720" duration="1564000" />
     </task>
     <task id="LOCAL-00001" summary="fix: пофиксил опечатку в названии функции для кнопки зарытия попапа">
       <created>1601632425009</created>
@@ -175,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602800458266</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="refactor: первое критическое про селекторы и многократный поиск элемента (62)">
+      <created>1602801104043</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1602801104043</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +214,8 @@
     <MESSAGE value="feat:  popup with big picture" />
     <MESSAGE value="feat:  popup with visibility and opacity" />
     <MESSAGE value="refactor: поправил немного верстки для инпутов" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: поправил немного верстки для инпутов" />
+    <MESSAGE value="refactor: первое критическое про селекторы и многократный поиск элемента (62)" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: первое критическое про селекторы и многократный поиск элемента (62)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1780" y="-415" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601632524271">
