@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d0974747-bb41-4001-a3a6-09c201bccac3" name="Default Changelist" comment="feat:  popup with visibility and opacity">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/mesto.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/scripts.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProjectId" id="1iJLMKBkAut0eC2UzccExKTtg0R" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\yandex-praktikum\mesto\mesto\images" />
+      <recent name="D:\yandex-praktikum\mesto\mesto\blocks\popup" />
+      <recent name="D:\yandex-praktikum\mesto\mesto\blocks\popup-edit" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0974747-bb41-4001-a3a6-09c201bccac3" name="Default Changelist" comment="" />
+      <created>1601620700336</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601620700336</updated>
+      <workItem from="1601620702428" duration="207000" />
+      <workItem from="1601632149193" duration="2118000" />
+      <workItem from="1601667921843" duration="6001000" />
+      <workItem from="1601834114245" duration="2802000" />
+      <workItem from="1602191418331" duration="519000" />
+      <workItem from="1602192256102" duration="4914000" />
+      <workItem from="1602527725024" duration="5461000" />
+      <workItem from="1602628094096" duration="8160000" />
+      <workItem from="1602690171337" duration="1275000" />
+      <workItem from="1602700580758" duration="9054000" />
+      <workItem from="1602799459720" duration="819000" />
+    </task>
+    <task id="LOCAL-00001" summary="fix: пофиксил опечатку в названии функции для кнопки зарытия попапа">
+      <created>1601632425009</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601632425009</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix: убрал отдельную функцию для закрытия попапа на кнопке закрытия">
+      <created>1601632657498</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601632657498</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix: &#10;1. button types add &#10;2. button close now button (not img) &#10;3. form now with attributes.&#10;4. inputs width modificators&#10;5. saveBtn type=submit&#10;6. some script fix (remove toggle)">
+      <created>1601671660678</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601671660678</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix: вызвать закрытие через onClickCloseBtn()">
+      <created>1601842359950</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601842359950</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix: добавить type 6-ти кнопкам и name для 2-х инпутов и 1 формы">
+      <created>1601843587175</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601843587175</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: add edit to popup">
+      <created>1602194356528</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602194356529</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: from data to DOM">
+      <created>1602540704450</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602540704450</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: form add and create new item">
+      <created>1602635173836</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602635173836</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: clear add form">
+      <created>1602707764618</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1602707764618</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: like btn toggle">
+      <created>1602708850959</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602708850959</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat:  delete btn">
+      <created>1602711313563</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1602711313563</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat:  popup with big picture">
+      <created>1602714804545</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1602714804545</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat:  popup with visibility and opacity">
+      <created>1602715272923</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1602715272923</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix: пофиксил опечатку в названии функции для кнопки зарытия попапа" />
+    <MESSAGE value="fix: убрал отдельную функцию для закрытия попапа на кнопке закрытия" />
+    <MESSAGE value="fix: &#10;1. button types add &#10;2. button close now button (not img) &#10;3. form now with attributes.&#10;4. inputs width modificators&#10;5. saveBtn type=submit&#10;6. some script fix (remove toggle)" />
+    <MESSAGE value="fix: вызвать закрытие через onClickCloseBtn()" />
+    <MESSAGE value="fix: добавить type -nb кнопкам и name для инпутов и формы" />
+    <MESSAGE value="fix: добавить type 6-ти кнопкам и name для 2-х инпутов и 1 формы" />
+    <MESSAGE value="feat: add edit to popup" />
+    <MESSAGE value="feat: from data to DOM" />
+    <MESSAGE value="feat: form add and create new item" />
+    <MESSAGE value="feat: clear add form" />
+    <MESSAGE value="feat: like btn toggle" />
+    <MESSAGE value="feat:  delete btn" />
+    <MESSAGE value="feat:  popup with big picture" />
+    <MESSAGE value="feat:  popup with visibility and opacity" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:  popup with visibility and opacity" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1780" y="-415" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601632524271">
+      <screen x="1366" y="-609" width="1920" height="1080" />
+    </state>
+    <state x="1780" y="-415" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.-609.1920.1080@1366.-609.1920.1080" timestamp="1601632524271" />
+    <state x="2056" y="-323" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602707973284">
+      <screen x="1366" y="-609" width="1920" height="1080" />
+    </state>
+    <state x="2056" y="-323" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.-609.1920.1080@1366.-609.1920.1080" timestamp="1602707973284" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1601670416359">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728/1366.-609.1920.1080@0.0.1366.728" timestamp="1601670416359" />
+    <state x="1918" y="-337" key="Vcs.Push.Dialog.v2" timestamp="1602715449741">
+      <screen x="1366" y="-609" width="1920" height="1080" />
+    </state>
+    <state x="393" y="183" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-609.1920.1080@0.0.1366.728" timestamp="1602194370094" />
+    <state x="1918" y="-337" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-609.1920.1080@1366.-609.1920.1080" timestamp="1602715449741" />
+    <state x="2143" y="-156" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602630967338">
+      <screen x="1366" y="-609" width="1920" height="1080" />
+    </state>
+    <state x="553" y="305" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.-609.1920.1080@0.0.1366.728" timestamp="1602193293619" />
+    <state x="2143" y="-156" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.-609.1920.1080@1366.-609.1920.1080" timestamp="1602630967338" />
+    <state x="1989" y="-374" width="672" height="678" key="search.everywhere.popup" timestamp="1602538681738">
+      <screen x="1366" y="-609" width="1920" height="1080" />
+    </state>
+    <state x="1989" y="-374" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.-609.1920.1080@1366.-609.1920.1080" timestamp="1602538681738" />
+  </component>
+</project>

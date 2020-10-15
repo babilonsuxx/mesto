@@ -55,7 +55,7 @@ const renderElements=()=>{
   elements.append(...items);
 }
 
-// генерим 1 для того, чтобы его поставить куда нить.
+// генерим 1 для того, чтобы его потом поставить.
 const getElement=(data)=>{
   const element=templateElement.content.cloneNode(true);
   element.querySelector('.element__img').setAttribute('alt', data.name);
