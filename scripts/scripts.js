@@ -136,19 +136,19 @@ const submitAddForm=(event)=>{
 
 //редактируем
 editBtn.addEventListener('click', clickEditBtn);
-popupEditCloseBtn.addEventListener('click', closePopup.bind(this, popupEdit));
+popupEditCloseBtn.addEventListener('click', ()=>closePopup(popupEdit));
 popupEditForm.addEventListener('submit', submitPopupForm);
 popupEdit.addEventListener('click', clickPopupBackground);
 
 //добавляем
-addBtn.addEventListener('click', openPopup.bind(this, popupAdd));
-popupAddCloseBtn.addEventListener('click', closePopup.bind(this, popupAdd));
+addBtn.addEventListener('click', ()=>openPopup(popupAdd));
+popupAddCloseBtn.addEventListener('click', ()=>closePopup(popupAdd));
 popupAddForm.addEventListener('submit', submitAddForm);
 popupAdd.addEventListener('click', clickPopupBackground);
 
 //показываем полное изображение
 popupPicture.addEventListener('click', clickPopupBackground);
-popupPictureCloseBtn.addEventListener('click', closePopup.bind(this, popupPicture));
+popupPictureCloseBtn.addEventListener('click', ()=>closePopup(popupPicture));
 
 renderElements();
 
