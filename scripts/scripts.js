@@ -34,13 +34,15 @@ const popupEditCloseBtn=document.querySelector('.popup-edit__btn-close');
 const popupEditForm=document.querySelector('.popup-edit__form')
 const name=document.querySelector('.profile__name');
 const job=document.querySelector('.profile__job');
-const nameInput=document.querySelector('.popup-edit__filed_name');
-const jobInput=document.querySelector('.popup-edit__field_job');
+const nameFormEdit=document.querySelector('.popup-edit__filed_name');
+const jobFormEdit=document.querySelector('.popup-edit__field_job');
 
 const addBtn=document.querySelector('.profile__add-btn');
 const popupAdd=document.querySelector('.popup-add');
 const popupAddCloseBtn=document.querySelector('.popup-add__btn-close');
 const popupAddForm=document.querySelector('.popup-add__form');
+const nameFormAdd=document.querySelector('.popup-add__filed_name');
+const linkFormAdd=document.querySelector('.popup-add__field_link');
 
 const popupPicture=document.querySelector('.popup-picture');
 const popupPictureCloseBtn=document.querySelector('.popup-picture__btn-close');
@@ -103,15 +105,15 @@ const clickPopupBackground=(event)=> {
 
 //редактируем
 const clickEditBtn=()=> {
-  nameInput.value=name.innerText;
-  jobInput.value=job.innerText;
+  nameFormEdit.value=name.innerText;
+  jobFormEdit.value=job.innerText;
   openPopup(popupEdit);
 }
 
 const submitPopupForm=(event)=> {
   event.preventDefault();
-  name.innerText=nameInput.value;
-  job.innerText=jobInput.value;
+  name.innerText=nameFormEdit.value;
+  job.innerText=jobFormEdit.value;
   closePopup(popupEdit);
 }
 
@@ -119,11 +121,11 @@ const submitPopupForm=(event)=> {
 const submitAddForm=(event)=>{
   event.preventDefault();
   const data={
-    name: document.querySelector('.popup-add__filed_name').value,
-    link: document.querySelector('.popup-add__field_link').value
+    name: nameFormAdd.value,
+    link: linkFormAdd.value
   }
-  document.querySelector('.popup-add__filed_name').value='';
-  document.querySelector('.popup-add__field_link').value='';
+  nameFormAdd.value='';
+  linkFormAdd.value='';
   const item=getElement(data);
   elements.prepend(item);
   closePopup(popupAdd);
