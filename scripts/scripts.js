@@ -99,7 +99,8 @@ const closePopup=(popup)=> {
 
 const clickPopupBackground=(event)=> {
   if(event.target===event.currentTarget) {
-    event.target.classList.remove('popup_is-open');
+    const currentPopup=event.target;
+    closePopup(currentPopup);
   }
 }
 
