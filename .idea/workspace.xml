@@ -19,8 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0974747-bb41-4001-a3a6-09c201bccac3" name="Default Changelist" comment="refactor: третье критическое про название функций с глаголов (113)">
-      <change beforePath="$PROJECT_DIR$/scripts/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/scripts.js" afterDir="false" />
+    <list default="true" id="d0974747-bb41-4001-a3a6-09c201bccac3" name="Default Changelist" comment="refactor: пятое критическое про bind">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/pr00" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -75,7 +75,8 @@
       <workItem from="1602628094096" duration="8160000" />
       <workItem from="1602690171337" duration="1275000" />
       <workItem from="1602700580758" duration="9054000" />
-      <workItem from="1602799459720" duration="2705000" />
+      <workItem from="1602799459720" duration="4381000" />
+      <workItem from="1603229454373" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="fix: пофиксил опечатку в названии функции для кнопки зарытия попапа">
       <created>1601632425009</created>
@@ -196,7 +197,21 @@
       <option name="project" value="LOCAL" />
       <updated>1602801879082</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="refactor: четвертое критическое про глобальное определение инпутов во второй форме (name, link)">
+      <created>1602802347682</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1602802347682</updated>
+    </task>
+    <task id="LOCAL-00019" summary="refactor: пятое критическое про bind">
+      <created>1602802489199</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1602802489199</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +248,9 @@
     <MESSAGE value="refactor: первое критическое про селекторы и многократный поиск элемента (62)" />
     <MESSAGE value="refactor: второе критическое про textContent (75)" />
     <MESSAGE value="refactor: третье критическое про название функций с глаголов (113)" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: третье критическое про название функций с глаголов (113)" />
+    <MESSAGE value="refactor: четвертое критическое про глобальное определение инпутов во второй форме (name, link)" />
+    <MESSAGE value="refactor: пятое критическое про bind" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: пятое критическое про bind" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1780" y="-415" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601632524271">
@@ -244,15 +261,19 @@
       <screen x="1366" y="-609" width="1920" height="1080" />
     </state>
     <state x="2056" y="-323" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.-609.1920.1080@1366.-609.1920.1080" timestamp="1602707973284" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1603229490307">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728/1366.-609.1920.1080@0.0.1366.728" timestamp="1603229490307" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1601670416359">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728/1366.-609.1920.1080@0.0.1366.728" timestamp="1601670416359" />
-    <state x="1918" y="-337" key="Vcs.Push.Dialog.v2" timestamp="1602715449741">
+    <state x="1918" y="-337" key="Vcs.Push.Dialog.v2" timestamp="1602802696869">
       <screen x="1366" y="-609" width="1920" height="1080" />
     </state>
     <state x="393" y="183" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-609.1920.1080@0.0.1366.728" timestamp="1602194370094" />
-    <state x="1918" y="-337" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-609.1920.1080@1366.-609.1920.1080" timestamp="1602715449741" />
+    <state x="1918" y="-337" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-609.1920.1080@1366.-609.1920.1080" timestamp="1602802696869" />
     <state x="2143" y="-156" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602630967338">
       <screen x="1366" y="-609" width="1920" height="1080" />
     </state>

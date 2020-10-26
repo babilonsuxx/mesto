@@ -30,24 +30,23 @@
 
 @import '../blocks/popup/popup.css';
 @import '../blocks/popup/_is-open/popup_is-open.css';
+@import '../blocks/popup/__container/popup__container.css';
+@import '../blocks/popup/__form/popup__form.css';
+@import '../blocks/popup/__title/popup__title.css';
+@import '../blocks/popup/__input/popup__input.css';
+@import '../blocks/popup/__input/_type_error/popup__input_type_error.css';
+@import '../blocks/popup/__error/popup__error.css';
+@import '../blocks/popup/__error/_visible/popup__error_visible.css';
+@import '../blocks/popup/__button/popup__button.css';
+@import '../blocks/popup/__button/_disabled/popup__button_disabled.css';
 
 @import '../blocks/popup-edit/__btn-close/popup-edit__btn-close.css';
-@import '../blocks/popup-edit/__container/popup-edit__container.css';
-@import '../blocks/popup-edit/__field/popup-edit__field.css';
 @import '../blocks/popup-edit/__field-job/popup-edit__field_job.css';
 @import '../blocks/popup-edit/__filed-name/popup-edit__filed_name.css';
-@import '../blocks/popup-edit/__form/popup-edit__form.css';
-@import '../blocks/popup-edit/__title/popup-edit__title.css';
-@import '../blocks/popup-edit/__btn-save/popup-edit__btn-save.css';
 
 @import '../blocks/popup-add/__btn-close/popup-add__btn-close.css';
-@import '../blocks/popup-add/__container/popup-add__container.css';
-@import '../blocks/popup-add/__field/popup-add__field.css';
 @import '../blocks/popup-add/__field-job/popup-add__filed_name.css';
 @import '../blocks/popup-add/__filed-name/popup-add__field_link.css';
-@import '../blocks/popup-add/__form/popup-add__form.css';
-@import '../blocks/popup-add/__title/popup-add__title.css';
-@import '../blocks/popup-add/__btn-save/popup-add__btn-create.css';
 
 @import '../blocks/popup-picture/__container/popup-picture__container.css';
 @import '../blocks/popup-picture/__btn-close/popup-picture__btn-close.css';

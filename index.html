@@ -39,25 +39,29 @@
     </footer>
 
     <div class="popup popup-edit">
-      <div class="popup-edit__container">
+      <div class="popup__container">
         <button type="button" class="popup-edit__btn-close"></button>
-        <h3 class="popup-edit__title">Редактировать профиль</h3>
-        <form class="popup-edit__form" method="post" name="popupEditForm" action="#">
-          <input type="text" class="popup-edit__field popup-edit__filed_name" name="editName" required>
-          <input type="text" class="popup-edit__field popup-edit__field_job" name="editJob" required>
-          <button class="popup-edit__btn-save" type="submit">Сохранить</button>
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <form class="popup__form popup-edit__form" method="post" name="popupEditForm" action="#">
+          <input type="text" class="popup__input popup-edit__filed_name" name="editName" required >
+          <span class="popup__error">ошибка валидации</span>
+          <input type="text" class="popup__input popup-edit__field_job" name="editJob" required>
+          <span class="popup__error">ошибка валидации</span>
+          <button class="popup__button" type="submit">Сохранить</button>
         </form>
       </div>
     </div>
 
     <div class="popup popup-add">
-      <div class="popup-add__container">
+      <div class="popup__container">
         <button type="button" class="popup-add__btn-close"></button>
-        <h3 class="popup-add__title">Новое место</h3>
-        <form class="popup-add__form" method="post" name="popupAddForm" action="#">
-          <input placeholder="Название" type="text" class="popup-add__field popup-add__filed_name" name="addName" required>
-          <input placeholder="Ссылка на картинку" type="url" class="popup-add__field popup-add__field_link" name="addLink" required>
-          <button class="popup-add__btn-create" type="submit">Сохранить</button>
+        <h3 class="popup__title">Новое место</h3>
+        <form class="popup__form popup-add__form" method="post" name="popupAddForm" action="#">
+          <input placeholder="Название" type="text" class="popup__input popup-add__filed_name" name="addName" required>
+          <span class="popup__error">ошибка валидации</span>
+          <input placeholder="Ссылка на картинку" type="url" class="popup__input popup-add__field_link" name="addLink" required>
+          <span class="popup__error">ошибка валидации</span>
+          <button class="popup__button" type="submit">Сохранить</button>
         </form>
       </div>
     </div>
