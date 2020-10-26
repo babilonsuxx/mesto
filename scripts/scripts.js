@@ -148,7 +148,14 @@ popupAdd.addEventListener('click', clickPopupBackground);
 
 //показываем полное изображение
 popupPicture.addEventListener('click', clickPopupBackground);
-popupPictureCloseBtn.addEventListener('click', ()=>closePopup(popupPicture));
+popupPictureCloseBtn.addEventListener('click', ()=>closePopup(popupPicture))
+
+window.addEventListener('keyup', (evt)=>{
+  const currentPopup= document.querySelector('.popup_is-open');
+  if (evt.key==='Escape' && currentPopup) {
+   closePopup(currentPopup);
+  }
+})
 
 renderElements();
 
