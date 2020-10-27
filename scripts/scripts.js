@@ -91,15 +91,24 @@ const getElement=(data)=>{
 //открываем и закрываем любой попап
 const openPopup=(popup)=> {
   popup.classList.add('popup_is-open');
+  document.addEventListener('keyup', closePopupOnEsc);
 }
 
 const closePopup=(popup)=> {
   popup.classList.remove('popup_is-open');
+  document.removeEventListener('keyup', closePopupOnEsc);
 }
 
 const clickPopupBackground=(event)=> {
   if(event.target===event.currentTarget) {
     const currentPopup=event.target;
+    closePopup(currentPopup);
+  }
+}
+
+const closePopupOnEsc=(event)=>{
+  const currentPopup= document.querySelector('.popup_is-open');
+  if (event.key==='Escape') {
     closePopup(currentPopup);
   }
 }
@@ -151,12 +160,6 @@ popupAdd.addEventListener('click', clickPopupBackground);
 popupPicture.addEventListener('click', clickPopupBackground);
 popupPictureCloseBtn.addEventListener('click', ()=>closePopup(popupPicture))
 
-window.addEventListener('keyup', (evt)=>{
-  const currentPopup= document.querySelector('.popup_is-open');
-  if (evt.key==='Escape' && currentPopup) {
-   closePopup(currentPopup);
-  }
-})
 
 renderElements();
 
