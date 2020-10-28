@@ -1,4 +1,4 @@
-.popup-picture__btn-close {
+.popup__btn-close {
   position: absolute;
   top: -34px;
   right: -33px;
@@ -14,20 +14,20 @@
   transition: opacity 0.5s linear;
 }
 
-.popup-picture__btn-close:focus {
+.popup__btn-close:focus {
   outline: none;
 }
 
-.popup-picture__btn-close:hover {
+.popup-add__btn-close:hover {
   cursor: pointer;
   opacity: 0.6;
 }
 
 @media screen and (max-width: 820px) {
-  .popup-picture__btn-close {
-    top: -26px;
-    right: -28px;
-    width: 24px;
-    height: 24px;
+  .popup__btn-close {
+    top: -45px;
+    right: 5px;
+    width: 26px;
+    height: 26px;
   }
 }

@@ -31,6 +31,7 @@
 @import '../blocks/popup/popup.css';
 @import '../blocks/popup/_is-open/popup_is-open.css';
 @import '../blocks/popup/__container/popup__container.css';
+@import '../blocks/popup/__btn-close/popup__btn-close.css';
 @import '../blocks/popup/__form/popup__form.css';
 @import '../blocks/popup/__title/popup__title.css';
 @import '../blocks/popup/__input/popup__input.css';
@@ -40,15 +41,13 @@
 @import '../blocks/popup/__button/popup__button.css';
 @import '../blocks/popup/__button/_disabled/popup__button_disabled.css';
 
-@import '../blocks/popup-edit/__btn-close/popup-edit__btn-close.css';
+
 @import '../blocks/popup-edit/__field-job/popup-edit__field_job.css';
 @import '../blocks/popup-edit/__filed-name/popup-edit__filed_name.css';
 
-@import '../blocks/popup-add/__btn-close/popup-add__btn-close.css';
 @import '../blocks/popup-add/__field-job/popup-add__filed_name.css';
 @import '../blocks/popup-add/__filed-name/popup-add__field_link.css';
 
 @import '../blocks/popup-picture/__container/popup-picture__container.css';
-@import '../blocks/popup-picture/__btn-close/popup-picture__btn-close.css';
 @import '../blocks/popup-picture/__img/popup-picture__img.css';
 @import '../blocks/popup-picture/__description/popup-picture__description.css';
