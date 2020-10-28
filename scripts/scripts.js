@@ -93,13 +93,14 @@ const openPopup=(popup)=> {
   const form=popup.querySelector('.popup__form');
   if (form) {
     const button=form.querySelector('.popup__button');
-    toggleButtonState(button, form);
+    toggleButtonState(button, form, validationParams);
 
-    const inputs=Array.from(form.querySelectorAll('.popup__input'));
+  const inputs=Array.from(form.querySelectorAll('.popup__input'));
     inputs.forEach(input=>{
-      hideError(input, form);
+      hideError(input, form, validationParams);
     })
   }
+
   popup.classList.add('popup_is-open');
   document.addEventListener('keyup', closePopupOnEsc);
 }
