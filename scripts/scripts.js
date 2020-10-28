@@ -90,6 +90,16 @@ const getElement=(data)=>{
 
 //открываем и закрываем любой попап
 const openPopup=(popup)=> {
+  const form=popup.querySelector('.popup__form');
+  if (form) {
+    const button=form.querySelector('.popup__button');
+    toggleButtonState(button, form);
+
+    const inputs=Array.from(form.querySelectorAll('.popup__input'));
+    inputs.forEach(input=>{
+      hideError(input, form);
+    })
+  }
   popup.classList.add('popup_is-open');
   document.addEventListener('keyup', closePopupOnEsc);
 }
