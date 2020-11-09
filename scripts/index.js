@@ -1,3 +1,6 @@
+import { Card } from './Card.js';
+import { FormValidator } from './FormValidator.js';
+
 const initialCards = [
   {
     name: "Москва",
@@ -25,8 +28,16 @@ const initialCards = [
   },
 ];
 
+const validationParams = {
+  formSelector: ".popup__form",
+  inputSelector: ".popup__input",
+  submitButtonSelector: ".popup__button",
+  inactiveButtonClass: "popup__button_disabled",
+  inputErrorClass: "popup__input_type_error",
+  errorClass: "popup__error_visible",
+};
+
 const elements = document.querySelector(".elements");
-const templateElement = document.querySelector(".template__element");
 
 const editBtn = document.querySelector(".profile__edit-btn");
 const popupEdit = document.querySelector(".popup-edit");
@@ -54,51 +65,49 @@ const popupPictureDescription = document.querySelector(
 );
 
 // рисуем 6 из массива
-const renderElements = () => {
+const renderCards = () => {
   const items = initialCards.map((element) => getElement(element));
   elements.append(...items);
 };
 
 // генерим 1 для того, чтобы его потом поставить.
 const getElement = (data) => {
-  const element = templateElement.content.cloneNode(true);
 
-  const img = element.querySelector(".element__img");
-  const title = element.querySelector(".element__title");
-  const deleteBtn = element.querySelector(".element__delete-btn");
-  const likeBtn = element.querySelector(".element__like-btn");
+  const card=new Card(
+    data,
+    '.template__element',
+    (event) => {
+      popupPictureImg.setAttribute("src", event.target.getAttribute("src"));
+      popupPictureDescription.textContent = event.target.getAttribute("alt");
+      openPopup(popupPicture);
+    });
+  return(card.render());
 
-  img.setAttribute("alt", data.name);
-  img.setAttribute("src", data.link);
-  title.textContent = data.name;
-
-  likeBtn.addEventListener("click", (event) => {
-    event.target.classList.toggle("element__like-btn_liked");
-  });
-
-  deleteBtn.addEventListener("click", (event) => {
-    event.target.closest(".element").remove();
-  });
-
-  img.addEventListener("click", (event) => {
-    popupPictureImg.setAttribute("src", event.target.getAttribute("src"));
-    popupPictureDescription.textContent = event.target.getAttribute("alt");
-    openPopup(popupPicture);
-  });
-  return element;
 };
 
-//открываем и закрываем любой попап
-const openPopup = (popup) => {
-  const form = popup.querySelector(".popup__form");
-  if (form) {
-    const button = form.querySelector(".popup__button");
-    toggleButtonState(button, form, validationParams);
+const validateAddForm=new FormValidator(validationParams, '.popup-add__form');
+validateAddForm.enableValidation();
 
-    const inputs = Array.from(form.querySelectorAll(".popup__input"));
-    inputs.forEach((input) => {
-      hideError(input, form, validationParams);
+const validateEditForm=new FormValidator(validationParams, '.popup-edit__form');
+validateEditForm.enableValidation();
+
+//открываем и закрываем любой попап
+
+const validatePopupWithOpen= (currentPopup, currentValidateObj) => {
+    currentValidateObj._toggleButtonState(currentValidateObj.buttonElement, currentPopup,validationParams);
+    currentValidateObj.inputElements.forEach((input) => {
+      currentValidateObj._hideError(input, currentPopup, validationParams);
     });
+};
+
+const openPopup = (popup) => {
+
+  //проверим есть ли форма
+  const popupWithForm = popup.querySelector(".popup__form");
+  if (popupWithForm && popupWithForm.classList.contains('popup-add__form')) {
+    validatePopupWithOpen(popupWithForm, validateAddForm);
+  } else if (popupWithForm && popupWithForm.classList.contains('popup-edit__form')) {
+    validatePopupWithOpen(popupWithForm, validateEditForm);
   }
 
   popup.classList.add("popup_is-open");
@@ -170,4 +179,4 @@ popupAdd.addEventListener("click", clickPopupBackground);
 popupPicture.addEventListener("click", clickPopupBackground);
 popupPictureCloseBtn.addEventListener("click", () => closePopup(popupPicture));
 
-renderElements();
+renderCards();
