@@ -94,9 +94,9 @@ validateEditForm.enableValidation();
 //открываем и закрываем любой попап
 
 const validatePopupWithOpen= (currentPopup, currentValidateObj) => {
-    currentValidateObj._toggleButtonState(currentValidateObj.buttonElement, currentPopup,validationParams);
+    currentValidateObj.toggleButtonState(currentValidateObj.buttonElement, currentPopup,validationParams);
     currentValidateObj.inputElements.forEach((input) => {
-      currentValidateObj._hideError(input, currentPopup, validationParams);
+      currentValidateObj.hideError(input, currentPopup, validationParams);
     });
 };
 

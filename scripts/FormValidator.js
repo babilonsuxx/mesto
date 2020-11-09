@@ -12,21 +12,21 @@ class FormValidator {
     this.inputElements.forEach((input) => {
       input.addEventListener("input", (event) => {
         this._checkInputValidity(event.target, form, { ...rest });
-        this._toggleButtonState(this.buttonElement, form, { ...rest });
+        this.toggleButtonState(this.buttonElement, form, { ...rest });
       });
     });
-    this._toggleButtonState(this.buttonElement, form, { ...rest });
+    this.toggleButtonState(this.buttonElement, form, { ...rest });
   }
 
   _checkInputValidity(input, form, { errorClass, inputErrorClass }) {
     if (input.validity.valid) {
-      this._hideError(input, form, { errorClass, inputErrorClass });
+      this.hideError(input, form, { errorClass, inputErrorClass });
     } else {
       this._showError(input, form, { errorClass, inputErrorClass });
     }
   }
 
-  _toggleButtonState(buttonElement, form, { inactiveButtonClass }) {
+  toggleButtonState(buttonElement, form, { inactiveButtonClass }) {
     if (form.checkValidity()) {
       buttonElement.classList.remove(inactiveButtonClass);
       buttonElement.disabled = false;
@@ -43,7 +43,7 @@ class FormValidator {
     input.classList.add(inputErrorClass);
   }
 
-  _hideError(input, form, { errorClass, inputErrorClass }) {
+  hideError(input, form, { errorClass, inputErrorClass }) {
     const errorElement = form.querySelector(`#${input.id}-error`);
     errorElement.classList.remove(errorClass);
     errorElement.textContent = "";
