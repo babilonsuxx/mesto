@@ -37,6 +37,7 @@ const validationParams = {
   errorClass: "popup__error_visible",
 };
 
+const keyEsc='Escape';
 const elements = document.querySelector(".elements");
 
 const editBtn = document.querySelector(".profile__edit-btn");
@@ -128,7 +129,7 @@ const clickPopupBackground = (event) => {
 
 const closePopupOnEsc = (event) => {
   const currentPopup = document.querySelector(".popup_is-open");
-  if (event.key === "Escape") {
+  if (event.key === keyEsc) {
     closePopup(currentPopup);
   }
 };
